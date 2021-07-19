@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hamadmuhammad758/Node-JS-Snippets#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "joi": "^17.4.1",
     "mongoose": "^5.13.3"
   }

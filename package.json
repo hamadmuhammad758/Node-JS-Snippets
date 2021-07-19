@@ -1,0 +1,19 @@
+{
+  "name": "nodejssnippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamadmuhammad758/Node-JS-Snippets.git"
+  },
+  "author": "hamad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamadmuhammad758/Node-JS-Snippets/issues"
+  },
+  "homepage": "https://github.com/hamadmuhammad758/Node-JS-Snippets#readme"
+}

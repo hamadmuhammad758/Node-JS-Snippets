@@ -10,10 +10,10 @@ An example of how to hash a password using bcrypt
 
 #### Authorization&Authentication/auth.js
 This file helps you authenticate new uesrs
-    1. First register the  new user using hashed password 
-    2. Authenticate user by passing correct credential
-    3. Authenticate user by passing incorrect password
-    4. Authenticate user by passing incorrect email
+1. First register the  new user using hashed password 
+2. Authenticate user by passing correct credential
+3. Authenticate user by passing incorrect password
+4. Authenticate user by passing incorrect email
 
 
 

@@ -1,3 +1,4 @@
+// How to hash a password using bcrypt
 
 const bcrypt=require('bcrypt');
 
@@ -16,3 +17,4 @@ hashingPassword(userJSON);
 // Output 
 // Before{"name":"hamad","email":"mhamad756@gmail.com","password":"123456789"}
 // After{"name":"hamad","email":"mhamad756@gmail.com","password":"$2b$10$z.6TAFPmsYjlQWzfv2thDuRJYhYkmHE479MvIBHj49/f8F6MIfzQC"}
+///

@@ -1,8 +1,4 @@
-// Authenticate the user using JSON Web Tokens
-// Install API client like Postman or Insomnia (Preffered) for testing
-// User will provide credentials and we will return JSON WEb token if authenticated
-
-//Import express framework and create a router to handle incoming requests
+// Token generation is delegated to userschema , as inspired from Information Expert Principle
 
 const express = require('express');
 const app = express();
@@ -48,6 +44,9 @@ const userSchema= new mongoose.Schema({
     }
 
 });
+userSchema.methods.generateAuthToken=function(){
+    return jwt.sign({name:"hamad",admin:true},jwtPrivateKey)
+}
 
 //Compile user schema to user Model
 const UserModel=mongoose.model('User',userSchema);
@@ -81,7 +80,7 @@ app.get('/',async  (req, res) => {
             if(isPasswordCorrect){
                 console.log("Password Valid");
                 // Genertae jwt webstoken and embedd additional required information
-                const token=jwt.sign({name:"hamad",admin:true},jwtPrivateKey)     
+                const token=user.generateAuthToken();     
                 // set the response header with the json web token    
                 res.header("x-auth-token",token).status(200).send("Valid User");       
             }
